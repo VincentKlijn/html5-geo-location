@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="HTML5 Geo Location Demo">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>HTML5 Geo Location Demo</title>
+	<!-- External stylesheet for this page -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- Google Maps API -->
+    <!-- this API key is restricted to GitHub demo use -->
+    <!--
+    <script language="javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdlt2hWD3yIWRl5fQ0Y-dDoCUIlB7PGSU&callback=initMap"></script>
+    -->
+    <script language="javascript" src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+	<!-- External js library for Geo Location functionality -->
+    <script language="javascript" src="javascript/vkHTML5GeoLocationGM.js"></script>
+    <!-- Local script for just this demonstration -->
+</head>
+
+<body>
+
+	<!-- the outer container -->
+	<div id="content">
+
+		<h1>HTML5 Geo Location Demo using Google Maps</h1>
+
+		<!-- this paragraph holds the current status of the Geo operations -->
+		<p id="statusMessage" class="message" />
+
+		<!-- the inner container, holding the three images -->
+		<div id="mapCanvas">
+            <!-- Google Maps shows here -->
+        </div> <!-- END results -->
+		
+	</div> <!-- END content -->
+	
+</body>
+</html>

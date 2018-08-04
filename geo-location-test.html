@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="HTML5 Geo Location Test">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>HTML5 Geo Location Test</title>
+	<!-- External stylesheet for this page -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+	<!-- External js library for Drag & Drop functionality -->
+    <script language="javascript" src="javascript/vkHTML5GeoLocation.js"></script>
+    <!-- Local script for just this demonstration -->
+    <script language="javascript">
+        
+        // global variable to hold the geo-location object
+        var myGeoLoc;
+        
+        // initialize our little piece of JavaScript
+        function init() {
+            if ( myGeoLoc = getGeoLocation() ) {
+                statusMessage('HTML5 Geolocation is supported');
+            } else {
+                statusMessage('HTML5 Geolocation is not supported');
+            }
+        }
+        
+        // wait for everything to load, then start running the script
+        window.onload = function() {
+            init();
+        }
+    </script>
+</head>
+
+<body>
+
+	<!-- the outer container -->
+	<div id="content">
+
+		<h1>HTML5 Geo Location Test</h1>
+
+		<!-- this paragraph holds the current status of the Geo operations -->
+		<p id="statusMessage" class="message" />
+
+	</div> <!-- END content -->
+	
+</body>
+</html>
