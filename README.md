@@ -11,7 +11,7 @@ The HTML is heavily commented to make identifying the elements easy and to under
 
 Be aware: the Google Maps API needs an API Key for full functionality. Without it, there is an error message and dark overlay.
 Get a key and change the call into:
-<script src="https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY>&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 
 ### The CSS
 The CSS is heavily commented to explain the individual rules.
